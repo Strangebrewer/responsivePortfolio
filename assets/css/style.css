@@ -239,14 +239,19 @@ h4 {
     .content {
         width: 768px;
         max-width: 90%;
+        position: relative;
     }
     section {
-        width: 464px;
+        width: 468px;
         max-width: 59%;
     }
     aside {
+        margin-left: 30px;
         width: 270px;
-        max-width: 100%;
+        max-width: 39%;
+        position: absolute; /* did this because a) I need to keep the aside a certain width to keep the icons in line, and b) I didn't like that it was squeezing the section and the aside together too close and then moving the aside to the bottom before the break point */
+        top: 0;
+        right: 0;
     }
     #about-me img {
         margin-bottom: 12px;
@@ -289,6 +294,7 @@ h4 {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+        position: static; /* this is to reset the absolute positioning from the previous break point */
         float: none;
     }
     aside {
