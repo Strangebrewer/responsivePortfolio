@@ -231,7 +231,7 @@ h4 {
     background-color: #4aaaa5;
 }
 
-@media screen and (max-width: 980px) {
+@media (max-width: 980px) {
     header div {
         width: 768px;
         max-width: 90%;
@@ -243,15 +243,10 @@ h4 {
     }
     section {
         width: 468px;
-        max-width: 59%;
+        max-width: 58%;
     }
     aside {
-        margin-left: 30px;
         width: 270px;
-        max-width: 39%;
-        position: absolute; /* did this because a) I need to keep the aside a certain width to keep the icons in line, and b) I didn't like that it was squeezing the section and the aside together too close and then moving the aside to the bottom before the break point */
-        top: 0;
-        right: 0;
     }
     #about-me img {
         margin-bottom: 12px;
@@ -276,7 +271,7 @@ h4 {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     header div {
         width: 768px;
         max-width: 90%;
@@ -308,7 +303,7 @@ h4 {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
     header {
         position: static;
         text-align: center;
